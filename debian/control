@@ -1,19 +1,52 @@
 Source: deepin-image-viewer
 Section: utils
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
-Build-Depends: debhelper (>= 11), cmake, qtbase5-dev, pkg-config,libexif-dev, libqt5svg5-dev, libqt5x11extras5-dev, libsqlite3-dev, qttools5-dev-tools,qttools5-dev, libxcb-util0-dev, libstartup-notification0-dev,
- libraw-dev,libfreeimage-dev, libqt5opengl5-dev, qtbase5-private-dev,
- qtmultimedia5-dev, x11proto-xext-dev, libmtdev-dev, libegl1-mesa-dev,
- libudev-dev, libfontconfig1-dev, libfreetype6-dev, libglib2.0-dev,
- libxrender-dev, libdtkwidget-dev, libdtkwidget5-bin,libdtkcore5-bin,libgio-qt-dev,libudisks2-qt5-dev
-Standards-Version: 3.9.8
+Maintainer: Ananta Mishra <mishraananta2017@gmail.com>
+XSBC-Original-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Build-Depends:
+ cmake,
+ debhelper-compat(= 13),
+ libdtkcore5-bin(>=5.5~),
+ libdtkwidget-dev(>=5.5~),
+ libdtkwidget5-bin(>=5.5~),
+ libegl1-mesa-dev,
+ libexif-dev,
+ libfontconfig1-dev,
+ libfreeimage-dev,
+ libfreetype6-dev,
+ libgio-qt-dev,
+ libglib2.0-dev,
+ libmtdev-dev,
+ libqt5opengl5-dev,
+ libqt5svg5-dev,
+ libqt5x11extras5-dev,
+ libraw-dev,
+ libsqlite3-dev,
+ libstartup-notification0-dev,
+ libudev-dev,
+ libudisks2-qt5-dev,
+ libxcb-util0-dev,
+ libxrender-dev,
+ pkg-config,
+ qtbase5-dev,
+ qtbase5-private-dev,
+ qtmultimedia5-dev,
+ qttools5-dev,
+ qttools5-dev-tools,
+ x11proto-xext-dev,
+Standards-Version: 4.5.1
 Homepage: http://www.deepin.org
 
 Package: deepin-image-viewer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5sql5-sqlite, qt5-image-formats-plugins
-Recommends: libqt5libqgtk2, kimageformat-plugins ,deepin-ocr
+Depends:
+ libqt5sql5-sqlite,
+ qt5-image-formats-plugins,
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ deepin-ocr,
+ kimageformat-plugins,
+ libqt5libqgtk2,
 Description: Image Viewer is an image viewing tool with fashion interface and smooth performance.
  Deepin Image Viewer is an image viewing tool with fashion interface and smooth performance.
-

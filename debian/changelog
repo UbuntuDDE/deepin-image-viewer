@@ -1,5 +1,5 @@
-deepin-image-viewer (1.0.0-1) unstable; urgency=medium
+deepin-image-viewer (5.8.2-1ubuntu1) impish; urgency=medium
 
-  * Initial release 
+  * New upstream release for impish. 
 
- -- Deepin Packages Builder <packages@linuxdeepin.com>  Wed, 24 Feb 2016 14:15:54 +0800
+ -- Ananta Mishra <mishraananta2017@gmail.com>  Thu, 14 Oct 2021 16:47:42 +0545
